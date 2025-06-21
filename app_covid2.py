@@ -7,7 +7,7 @@ import io
 # Cargar el modelo desde GitHub
 @st.cache_resource
 def load_model():
-    url = "https://raw.githubusercontent.com/TU_USUARIO/TU_REPOSITORIO/main/best_model.pkl"  # Reemplaza con tu URL real
+    url = "https://github.com/JoseSC2025/predictor_covid_mortalidad_2/blob/main/best_model.pkl"  # Reemplaza con tu URL real
     response = requests.get(url)
     return joblib.load(io.BytesIO(response.content))
 
